@@ -21,7 +21,7 @@ module.exports = {
                 perguntaSeg,
                 respostaSeg,
                 location,
-            })
+            }).catch(err => {console.log(err);})
             return res.json(user)
         }
     }
