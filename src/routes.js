@@ -4,7 +4,7 @@ const usersController = require('./Controllers/usersController')
 const rotas = Router();
 
 rotas.get('/users', usersController.index)
-rotas.post('/users', usersController.create)
+rotas.post('/users', usersController.store)
 
 
 module.exports = rotas;
