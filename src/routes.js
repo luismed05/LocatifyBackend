@@ -7,6 +7,4 @@ rotas.post('/users', usersController.store);
 
 rotas.get('/users', usersController.index);
 
-
-
 module.exports = rotas;

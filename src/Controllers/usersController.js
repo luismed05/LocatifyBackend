@@ -8,9 +8,10 @@ module.exports = {
     async store(req,res){
         const { name, senha, perguntaSeg, respostaSeg, latitude, longitude} = req.body;
         console.log(req.body);
+        console.log(req.params);
+        console.log(req.query);
         let user = await User.findOne({ name });
         if(!user){
-
             const location = {
                 type: 'Point',
                 coordinates: [longitude, latitude],
